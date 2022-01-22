@@ -46,48 +46,47 @@ namespace PatyUkol
                         if (cislo >= 5 && cislo < 30) pocetciselv++;
                     }
                 }
-            
                 foreach (string prvek in textBox1.Lines)
-                if (prvek != "")
+                    if (prvek != "")
+                    {
+                        soucetvsech += Convert.ToDouble(prvek);
+                    }
+                prumer = soucet / pocet;
+                prumer = Math.Round(prumer, 3);
+                if (pocetcisel > 0)
                 {
-                    soucetvsech += Convert.ToDouble(prvek);
+                    if (prumer != 0) label1.Text = Convert.ToString(prumer);
+                    else label1.Text = "";
+                    if (minimalni > double.MinValue) label10.Text = Convert.ToString(minimalni);
+                    else label10.Text = "";
+                    if (pocetciselv > 0) label11.Text = Convert.ToString(pocetciselv);
+                    else label11.Text = "";
+                    if (soucetvsech != 0) label14.Text = Convert.ToString(soucetvsech);
+                    else label14.Text = "";
+                    if (prvnipozice == 0 || pocet == 0)
+                    {
+                        label12.Text = "";
+                        label13.Text = "";
+                    }
+                    else
+                    {
+                        label12.Text = Convert.ToString(prvnipozice);
+                        label13.Text = Convert.ToString(poslednipozice);
+                    }
+                }
+                else
+                {
+                    label1.Text = "";
+                    label10.Text = "";
+                    label11.Text = "";
+                    label12.Text = "";
+                    label13.Text = "";
+                    label14.Text = "";
                 }
             }
             catch
             {
                 MessageBox.Show("Něco se nepovedlo", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            prumer = soucet / pocet;
-            prumer = Math.Round(prumer, 3);
-            if (pocetcisel > 0)
-            {
-                if (prumer != 0) label1.Text = Convert.ToString(prumer);
-                else label1.Text = "";
-                if (minimalni > double.MinValue) label10.Text = Convert.ToString(minimalni);
-                else label10.Text = "";
-                if (pocetciselv > 0) label11.Text = Convert.ToString(pocetciselv);
-                else label11.Text = "";
-                if (soucetvsech != 0) label14.Text = Convert.ToString(soucetvsech);
-                else label14.Text = "";
-                if (prvnipozice == 0 ||pocet==0)
-                {
-                    label12.Text = "";
-                    label13.Text = "";
-                }
-                else
-                {
-                    label12.Text = Convert.ToString(prvnipozice);
-                    label13.Text = Convert.ToString(poslednipozice);
-                }
-            }
-            else
-            {
-                label1.Text = "";
-                label10.Text = "";
-                label11.Text = "";
-                label12.Text = "";
-                label13.Text = "";
-                label14.Text = "";
             }
         }
         private void button2_Click(object sender, EventArgs e)
