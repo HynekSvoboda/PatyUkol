@@ -44,16 +44,13 @@ namespace PatyUkol
                         }
                         if (cislo == 3) poslednipozice = pocet;
                         if (cislo >= 5 && cislo < 30) pocetciselv++;
-
-
-                        foreach (string prvek in textBox1.Lines)
-                        {
-                            if (prvek != "")
-                            {
-                                soucetvsech += Convert.ToDouble(prvek);
-                            }
-                        }
                     }
+                }
+            
+                foreach (string prvek in textBox1.Lines)
+                if (prvek != "")
+                {
+                    soucetvsech += Convert.ToDouble(prvek);
                 }
             }
             catch
@@ -66,7 +63,7 @@ namespace PatyUkol
             {
                 if (prumer != 0) label1.Text = Convert.ToString(prumer);
                 else label1.Text = "";
-                if (minimalni < double.MinValue) label10.Text = Convert.ToString(minimalni);
+                if (minimalni > double.MinValue) label10.Text = Convert.ToString(minimalni);
                 else label10.Text = "";
                 if (pocetciselv > 0) label11.Text = Convert.ToString(pocetciselv);
                 else label11.Text = "";
