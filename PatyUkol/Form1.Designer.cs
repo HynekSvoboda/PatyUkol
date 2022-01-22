@@ -79,9 +79,8 @@ namespace PatyUkol
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(135, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // label3
             // 
@@ -180,9 +179,8 @@ namespace PatyUkol
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(143, 142);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.Size = new System.Drawing.Size(0, 20);
             this.label10.TabIndex = 12;
-            this.label10.Text = "label10";
             // 
             // label11
             // 
@@ -191,9 +189,8 @@ namespace PatyUkol
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(759, 142);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 20);
+            this.label11.Size = new System.Drawing.Size(0, 20);
             this.label11.TabIndex = 13;
-            this.label11.Text = "label11";
             // 
             // label12
             // 
@@ -202,9 +199,8 @@ namespace PatyUkol
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(148, 206);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 20);
+            this.label12.Size = new System.Drawing.Size(0, 20);
             this.label12.TabIndex = 14;
-            this.label12.Text = "label12";
             // 
             // label13
             // 
@@ -213,9 +209,8 @@ namespace PatyUkol
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(666, 69);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 20);
+            this.label13.Size = new System.Drawing.Size(0, 20);
             this.label13.TabIndex = 15;
-            this.label13.Text = "label13";
             // 
             // label14
             // 
@@ -224,9 +219,8 @@ namespace PatyUkol
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(752, 206);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 20);
+            this.label14.Size = new System.Drawing.Size(0, 20);
             this.label14.TabIndex = 16;
-            this.label14.Text = "label14";
             // 
             // button3
             // 
